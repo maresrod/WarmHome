@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "35150832716",
+    "firebase_url": "https://myfirebaseproyect-fca5c.firebaseio.com",
+    "project_id": "myfirebaseproyect-fca5c",
+    "storage_bucket": "myfirebaseproyect-fca5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35150832716:android:a74a45bce75e8a2fc1c0e9",
+        "android_client_info": {
+          "package_name": "com.example.casaCaliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35150832716-p8kr3gvfj1fl1kev6ic4220nv3b6kv07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.casaCaliente",
+            "certificate_hash": "15e0947270142120370482eb544a328e0d85a6b4"
+          }
+        },
+        {
+          "client_id": "35150832716-i997s4h99ce64l7flg0o80gkv40jlgcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiY6VHY6GoCQ8ljrcXN7cDR7xrSCWxPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35150832716-imqs35j5chei7bcffh7e0iqbs2k26fod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35150832716:android:bd30a3b1fd80f8b6c1c0e9",
+        "android_client_info": {
+          "package_name": "com.example.rasberrypi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35150832716-jkkslu2onvlejmcl66s05fc8g4felm71.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rasberrypi",
+            "certificate_hash": "2de1c86bd2d775e39c3a6dfbc0f060adabc45222"
+          }
+        },
+        {
+          "client_id": "35150832716-i997s4h99ce64l7flg0o80gkv40jlgcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiY6VHY6GoCQ8ljrcXN7cDR7xrSCWxPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35150832716-imqs35j5chei7bcffh7e0iqbs2k26fod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35150832716:android:2fd4bbdba7d6409ac1c0e9",
+        "android_client_info": {
+          "package_name": "com.example.warmhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35150832716-8i2v6ghdavi6mu51uam0m8hn4dut9l7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.warmhome",
+            "certificate_hash": "2de1c86bd2d775e39c3a6dfbc0f060adabc45222"
+          }
+        },
+        {
+          "client_id": "35150832716-i997s4h99ce64l7flg0o80gkv40jlgcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiY6VHY6GoCQ8ljrcXN7cDR7xrSCWxPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35150832716-imqs35j5chei7bcffh7e0iqbs2k26fod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35150832716:android:0ad7803542b73807c1c0e9",
+        "android_client_info": {
+          "package_name": "com.example.warmhome.things"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35150832716-tu0h0gr9m8476jr9t71r7qr1to5a59gp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.warmhome.things",
+            "certificate_hash": "15e0947270142120370482eb544a328e0d85a6b4"
+          }
+        },
+        {
+          "client_id": "35150832716-i997s4h99ce64l7flg0o80gkv40jlgcu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiY6VHY6GoCQ8ljrcXN7cDR7xrSCWxPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "35150832716-imqs35j5chei7bcffh7e0iqbs2k26fod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

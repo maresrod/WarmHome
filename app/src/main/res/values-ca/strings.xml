@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WarmHome</string>
+    <string name="cerrar_sesion">Tancar Sesió</string>
+    <string name="info_usuario">"Informació d\'usuari"</string>
+    <string name="servicio_tecnico">Servei Tècnic</string>
+    <string name="nombre">Nom d\'usuari: </string>
+    <string name="correo">Correu: </string>
+    <string name="proveedores">Proveedors: </string>
+    <string name="telefono">Telèfon: </string>
+    <string name="ID">ID: </string>
+    <string name="acercaDe">Més informció...</string>
+    <string name="inicio">Inici</string>
+    <string name="preferencias">Preferencies</string>
+    <string name="perfil">Perfil</string>
+    <string name="mapa">Mapa</string>
+    <string name="textoAcercaDe">Este programa ha sigut desarrollat com una primera versió per al projecte de IOT,en esta aplicaió se visualitzaràn les dades de la temperatura, el timbre i del aigua. També es podrà controlar desde la aplicació la calefació, les finestres i la banyera de la casa.</string>
+    <string name="facebook_application_id"
+        translatable="false">3136930153047139</string>
+    <string name="facebook_login_protocol_scheme"
+        translatable="false">fb3136930153047139</string>
+    <string name="twitter_consumer_key"
+        translatable="false">u9ckBGJfFGsO1N3tll2rrfZu8</string>
+    <string name="twitter_consumer_secret"
+        translatable= "false">bJnSHqtdPCbxDYOBSkQQBbkb3vSXeYwGKw2q9v3LE9DfewTCqI</string>
+
+</resources>

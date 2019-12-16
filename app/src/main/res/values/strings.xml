@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">WarmHome</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="info_usuario">Información de usuario</string>
+    <string name="servicio_tecnico">Servicio Técnico</string>
+    <string name="nombre">Nombre del usuario: </string>
+    <string name="correo">Correo: </string>
+    <string name="proveedores">Proveedores: </string>
+    <string name="telefono">Telefono: </string>
+    <string name="ID">ID: </string>
+    <string name="acercaDe">Acerca de...</string>
+    <string name="inicio">Inicio</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="perfil">Perfil</string>
+    <string name="mapa">Mapa</string>
+    <string name="textoAcercaDe">Este programa ha sido desarrollado como primera versión para el proyecto de IOT,en esta aplicaión se visualizara los datos de la temperatura, el timbre y del agua. Tambien vas a poder controlar la desde la aplicación la calefación las ventanas y la bañera de la casa.</string>
+
+
+    <!-- Autentificacion Facebook y Twitter -->
+    <string name="facebook_application_id"
+        translatable="false">3136930153047139</string>
+    <string name="facebook_login_protocol_scheme"
+        translatable="false">fb3136930153047139</string>
+    <string name="twitter_consumer_key"
+        translatable="false">u9ckBGJfFGsO1N3tll2rrfZu8</string>
+    <string name="twitter_consumer_secret"
+        translatable= "false">bJnSHqtdPCbxDYOBSkQQBbkb3vSXeYwGKw2q9v3LE9DfewTCqI</string>
+
+    <!--Diseño Firebase Login-->
+    <string name="fui_default_toolbar_title" translatable="false">Tipo de Autentificación</string>
+    <string name="fui_sign_in_with_email" translatable="false">Entra con tu correo</string>
+    <string name="fui_progress_dialog_signing_up" translatable="false">Creando cuenta...</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_navigation_menu">NavigationMenu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.fragment.app.FragmentTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/grupofab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:fab_addButtonColorNormal="@color/colorApp"
+                app:fab_addButtonColorPressed="@color/colorFondoMenu"
+                app:fab_labelStyle="@style/etiqueta"
+                android:elevation="28dp">
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/colorFondoMenu"
+                    app:fab_colorPressed="@color/colorApp"
+                    app:fab_icon="@drawable/acercade"
+                    app:fab_size="mini"
+                    app:fab_title="@string/acercaDe" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/colorFondoMenu"
+                    app:fab_colorPressed="@color/colorApp"
+                    app:fab_icon="@drawable/user"
+                    app:fab_size="mini"
+                    app:fab_title="@string/perfil" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/colorFondoMenu"
+                    app:fab_colorPressed="@color/colorApp"
+                    app:fab_icon="@drawable/help"
+                    app:fab_size="mini"
+                    app:fab_title="@string/servicio_tecnico" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_colorNormal="@color/colorFondoMenu"
+                    app:fab_colorPressed="@color/colorApp"
+                    app:fab_icon="@drawable/preference"
+                    app:fab_size="mini"
+                    app:fab_title="@string/preferencias" />
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_icon="@drawable/blueprint1"
+                    app:fab_size="mini"
+                    app:fab_colorNormal="@color/colorFondoMenu"
+                    app:fab_colorPressed="@color/colorApp"
+                    app:fab_title="@string/mapa"
+                    />
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        </FrameLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:background="@color/colorApp"/>
+    </LinearLayout>
+
+</androidx.fragment.app.FragmentTabHost>

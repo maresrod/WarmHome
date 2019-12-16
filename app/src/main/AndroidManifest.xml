@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.warmhome">
+
+    <!-- Permiso llamar por telefono-->
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"></uses-permission>
+    <!-- permisos para los servicios -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- permisos para la localización -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_wamhomeicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_wamhomeicon"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".LoginActivity"> <!-- esta es la primera actividad que se ejecute -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".UsuarioActivity" />
+        <activity android:name=".ServicioTecnicoActivity" />
+        <activity android:name=".AcercaDe" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".RoomsActivity"/>
+        <activity android:name=".PreferenciasActivity" />
+        <service android:name=".ServicioMusica" />
+        <activity android:name=".UsuarioFragment" />
+        <activity android:name=".ParametrosCardview.Temperatura" android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".ParametrosCardview.Presencia" android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".ParametrosCardview.Iluminacion" android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".ParametrosCardview.Ventana" android:theme="@style/AppTheme.CustomTheme"></activity>
+        <activity android:name=".EdicionUsuarioActivity" />
+        <activity android:name=".Habitaciones.PlanoCasa"/>
+        <service android:name=".ServicioLocalizacion"/>
+        <activity android:name=".Mapa"/>
+        <activity android:name=".Buscador"/>
+
+
+    </application>
+
+</manifest>

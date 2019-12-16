@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF8800"
+        android:padding="8dp"
+        android:gravity="center"
+        android:src="@drawable/ic_exit_to_app"/>-->
+
+    <TextView
+        android:id="@+id/titulo"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:text="WarmHome"
+        android:background="#FF8800"
+        android:layout_height="60dp"
+        android:textColor="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/salonprueba">
+
+        <TextView
+            android:id="@+id/text_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="42dp"
+            android:gravity="center"
+            android:text="Estás seguro de que deseas cerrar tu sesión?"
+            android:textSize="20sp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF8800"
+            android:text="Confirmar"
+            android:layout_marginRight="8dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF8800"
+            android:text="Cancelar"
+            android:layout_marginLeft="30dp"
+            android:textColor="#fff"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

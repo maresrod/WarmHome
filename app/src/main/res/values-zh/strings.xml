@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">温暖的</string>
+    <string name="cerrar_sesion">登出</string>
+    <string name="info_usuario">用户的资料</string>
+    <string name="servicio_tecnico">房屋的施工图</string>
+    <string name="nombre">用户名称: </string>
+    <string name="correo">邮: </string>
+    <string name="proveedores">S供应商: </string>
+    <string name="telefono">电话号码: </string>
+    <string name="ID">编号: </string>
+    <string name="acercaDe">关于</string>
+    <string name="inicio">開始</string>
+    <string name="preferencias">喜好</string>
+    <string name="perfil">個人資料</string>
+    <string name="mapa">Mapa</string>
+    <string name="textoAcercaDe">该程序已开发为物联网项目的第一个版本，在此应用中，将显示温度，门铃和水的数据。您还可以通过该应用程序控制房屋的窗户,暖气和浴缸。</string>
+    <string name="facebook_application_id"
+        translatable="false">3136930153047139</string>
+    <string name="facebook_login_protocol_scheme"
+        translatable="false">fb3136930153047139</string>
+    <string name="twitter_consumer_key"
+        translatable="false">u9ckBGJfFGsO1N3tll2rrfZu8</string>
+    <string name="twitter_consumer_secret"
+        translatable= "false">bJnSHqtdPCbxDYOBSkQQBbkb3vSXeYwGKw2q9v3LE9DfewTCqI</string>
+</resources>

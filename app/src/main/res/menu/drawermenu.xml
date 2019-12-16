@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/drawer1"
+        android:icon="@drawable/acercade"
+        android:title="Acerca de"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#5E4F47"/>
+<item
+    android:id="@+id/drawer2"
+    android:title="Perfil"
+    android:icon="@drawable/user"/>
+<item
+    android:id="@+id/drawer3"
+    android:title="Preferencias"
+    android:icon="@drawable/preference"/>
+<item
+    android:id="@+id/drawer4"
+    android:title="Servicio Tecnico"
+    android:icon="@drawable/help"/>
+    <item
+        android:id="@+id/drawer5"
+        android:title="Buscador"
+        android:icon="@drawable/search"/>
+</menu>
