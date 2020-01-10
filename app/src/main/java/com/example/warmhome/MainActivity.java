@@ -67,28 +67,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
 
-        flag = isUserLogged();
+        setTheme(R.style.DarkTheme);
 
-        NavigationView navigation = findViewById(R.id.nav_view);
-        View hView = navigation.getHeaderView(0);
+        flag = isUserLogged();
 
         FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
 
-        if (flag) {
-            TextView name = hView.findViewById(R.id.menunombre);
-            name.setText(usuario.getDisplayName());
-            TextView email = hView.findViewById(R.id.menucorreo);
-            email.setText(usuario.getEmail());
-        } else {
-            TextView name = hView.findViewById(R.id.menunombre);
-            name.setText("Anónimo");
-            TextView email = hView.findViewById(R.id.menucorreo);
-            email.setText("");
-        }
-
 //      TOOLBAR
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
 //      MENU FLOTANTE
         final FloatingActionsMenu menuBotones = (FloatingActionsMenu) findViewById(R.id.grupofab);
@@ -177,14 +164,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
-        mDrawerLayout.addDrawerListener(mToggle);
-        mToggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")

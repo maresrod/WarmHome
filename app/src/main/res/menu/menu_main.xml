@@ -7,12 +7,14 @@
         android:orderInCategory="1"
         android:icon="@drawable/telefono_movil"
         android:title="Llamar al tecnico"
-        app:showAsAction="always|collapseActionView"></item>
+        app:showAsAction="always|collapseActionView"
+        >
+
+    </item>
     <item
         android:id="@+id/cerrar_sesion"
         android:orderInCategory="1"
         android:icon="@drawable/logout"
         android:title="@string/cerrar_sesion"
         app:showAsAction="always|collapseActionView"/>
-
 </menu>

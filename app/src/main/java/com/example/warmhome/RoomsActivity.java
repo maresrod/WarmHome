@@ -27,7 +27,7 @@ public class RoomsActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
-
+        //setTheme(R.style.DarkTheme);
         Resources res = getResources();
 
         tabHost =  findViewById(android.R.id.tabhost);
