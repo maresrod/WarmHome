@@ -27,7 +27,7 @@ public class RoomsActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
-        //setTheme(R.style.DarkTheme);
+
         Resources res = getResources();
 
         tabHost =  findViewById(android.R.id.tabhost);
@@ -86,7 +86,7 @@ public class RoomsActivity extends FragmentActivity {
         fab4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PreferenciasActivity.class);
+                Intent i = new Intent(getApplicationContext(), BluetoothActivity.class);
                 startActivity(i);
                 menuBotones.collapse();
             }

@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="llamarTelefono"
+            android:onClick="lanzarLlamada"
             android:orientation="horizontal">
 
             <ImageView
@@ -271,11 +271,12 @@
             android:id="@+id/fab4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:fab_icon="@drawable/speaker_warm"
+            app:fab_size="mini"
             app:fab_colorNormal="@color/colorFondoMenu"
             app:fab_colorPressed="@color/colorApp"
-            app:fab_icon="@drawable/preference"
-            app:fab_size="mini"
-            app:fab_title="@string/preferencias" />
+            app:fab_title="@string/sistema_musica"
+            />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab5"
@@ -286,6 +287,17 @@
             app:fab_colorNormal="@color/colorFondoMenu"
             app:fab_colorPressed="@color/colorApp"
             app:fab_title="@string/mapa"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/camera1"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorFondoMenu"
+            app:fab_colorPressed="@color/colorApp"
+            app:fab_title="Timbre"
             />
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>

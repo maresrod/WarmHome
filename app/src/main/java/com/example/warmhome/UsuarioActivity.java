@@ -49,6 +49,7 @@ public class UsuarioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_usuario);
 
 
+
         final FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
         tlf = findViewById(R.id.telefono);
         email = findViewById(R.id.email);

@@ -114,11 +114,12 @@
             android:id="@+id/fab4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:fab_icon="@drawable/speaker_warm"
+            app:fab_size="mini"
             app:fab_colorNormal="@color/colorFondoMenu"
             app:fab_colorPressed="@color/colorApp"
-            app:fab_icon="@drawable/preference"
-            app:fab_size="mini"
-            app:fab_title="@string/preferencias" />
+            app:fab_title="@string/sistema_musica"
+            />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab5"

@@ -2,25 +2,19 @@ package com.example.warmhome;
 
 import android.Manifest;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AnimationUtils;
-import android.view.animation.Interpolator;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
@@ -31,7 +25,6 @@ import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.snackbar.Snackbar;
 
 public class ServicioTecnicoActivity extends AppCompatActivity {
 
@@ -58,6 +51,8 @@ public class ServicioTecnicoActivity extends AppCompatActivity {
         final FloatingActionButton fab3 = findViewById(R.id.fab3);
         final FloatingActionButton fab4 = findViewById(R.id.fab4);
         final FloatingActionButton fab5 = findViewById(R.id.fab5);
+        final FloatingActionButton fab6 = findViewById(R.id.fab6);
+
 
         fab1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +84,7 @@ public class ServicioTecnicoActivity extends AppCompatActivity {
         fab4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PreferenciasActivity.class);
+                Intent i = new Intent(getApplicationContext(), BluetoothActivity.class);
                 startActivity(i);
                 menuBotones.collapse();
             }
@@ -98,6 +93,14 @@ public class ServicioTecnicoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), PlanoCasa.class);
+                startActivity(i);
+                menuBotones.collapse();
+            }
+        });
+        fab6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), CamaraPortal.class);
                 startActivity(i);
                 menuBotones.collapse();
             }
@@ -152,6 +155,16 @@ public class ServicioTecnicoActivity extends AppCompatActivity {
             });
 
         }
+
+        if(id== R.id.preferencias){
+            lanzarPreferencias(null);
+            return true;
+        }
+
+        if(id==R.id.graficas){
+            Intent i = new Intent(ServicioTecnicoActivity.this, Graficas.class);
+            startActivity(i);
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -181,6 +194,11 @@ public class ServicioTecnicoActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(ServicioTecnicoActivity.this, new String[]{ Manifest.permission.CALL_PHONE}, MY_PERMISSIONS_REQUEST_CALL_PHONE);
             lanzarLlamada(null);
         }
+    }
+
+    public void lanzarPreferencias(View view) {
+        Intent i = new Intent(this, SettingsActivity.class);
+        startActivity(i);
     }
 
     public void lanzarDireccion(View view) {

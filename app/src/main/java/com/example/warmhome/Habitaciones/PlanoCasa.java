@@ -7,16 +7,11 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,26 +20,22 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
-import androidx.fragment.app.Fragment;
 
 import com.example.warmhome.AcercaDe;
 import com.example.warmhome.LoginActivity;
 import com.example.warmhome.MainActivity;
 import com.example.warmhome.Mapa;
 import com.example.warmhome.ParametrosCardview.Temperatura;
-import com.example.warmhome.PreferenciasActivity;
 import com.example.warmhome.R;
 import com.example.warmhome.ServicioLocalizacion;
-import com.example.warmhome.ServicioTecnicoActivity;
+import com.example.warmhome.SettingsActivity;
 import com.example.warmhome.UsuarioActivity;
+import com.example.warmhome.CamaraPortal;
 import com.firebase.ui.auth.AuthUI;
 import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 //TAB PLANO CASA
 public class PlanoCasa extends AppCompatActivity {
@@ -79,8 +70,10 @@ public class PlanoCasa extends AppCompatActivity {
         final FloatingActionButton fab3 = findViewById(R.id.fab3);
         final FloatingActionButton fab4 = findViewById(R.id.fab4);
         final FloatingActionButton fab5 = findViewById(R.id.fab5);
+        final FloatingActionButton fab6 = findViewById(R.id.fab6);
 
-        fab1.setOnClickListener(new View.OnClickListener() {
+
+            fab1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(getApplicationContext(), AcercaDe.class);
@@ -110,7 +103,7 @@ public class PlanoCasa extends AppCompatActivity {
         fab4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PreferenciasActivity.class);
+                Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
                 startActivity(i);
                 menuBotones.collapse();
             }
@@ -119,6 +112,14 @@ public class PlanoCasa extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(i);
+                    menuBotones.collapse();
+                }
+            });
+            fab6.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent i = new Intent(getApplicationContext(), CamaraPortal.class);
                     startActivity(i);
                     menuBotones.collapse();
                 }
@@ -211,14 +212,7 @@ public class PlanoCasa extends AppCompatActivity {
             });
 
 */
-            //VARIABLES
-            longitud = findViewById(R.id.Longi);
-            latitud = findViewById(R.id.Lati);
 
-            // Hacemos esto para recibir el valor de la longitud
-            IntentFilter filtro = new IntentFilter(ReceptorOperacion.ACTION_RESP);
-            filtro.addCategory(Intent.CATEGORY_DEFAULT);
-            registerReceiver(new ReceptorOperacion(), filtro);
         }
 
     //Mostrar temperatura en el plano

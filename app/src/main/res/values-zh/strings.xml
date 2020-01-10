@@ -12,6 +12,7 @@
     <string name="acercaDe">关于</string>
     <string name="inicio">開始</string>
     <string name="preferencias">喜好</string>
+    <string name="sistema_musica">Sistema Música</string>
     <string name="perfil">個人資料</string>
     <string name="mapa">Mapa</string>
     <string name="textoAcercaDe">该程序已开发为物联网项目的第一个版本，在此应用中，将显示温度，门铃和水的数据。您还可以通过该应用程序控制房屋的窗户,暖气和浴缸。</string>

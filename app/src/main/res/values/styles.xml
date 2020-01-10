@@ -1,31 +1,11 @@
 <resources>
 
     <!-- Base application theme. -->
-
-    <style name="LightTheme" parent="AppTheme">
-        <item name="colorPrimary">#29acc3</item>
-        <item name="colorPrimaryDark">#1d7b8c</item>
-        <item name="colorAccent">#29acc3</item>
-        <item name="android:colorBackground">#ffffff</item>
-        <item name="btnColor">#BBBBBB</item>
-        <item name="navBackground">#ffffff</item>
-    </style>
-
-    <style name="DarkTheme" parent="AppTheme">
-        <item name="colorPrimary">#29acc3</item>
-        <item name="colorPrimaryDark">#FF4081</item>
-        <item name="colorAccent">#29acc3</item>
-        <item name="android:colorBackground">#3C3C3C</item>
-        <item name="android:textColor">#ffffff</item>
-        <item name="btnColor">#228FA2</item>
-        <item name="navBackground">#3C3C3C</item>
-        <item name="android:color">#DF0B0B</item>
-
-    </style>
-
-
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
-
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -39,16 +19,17 @@
 
     <!--Diseño Firebase Login-->
     <style name="FirebaseUITema" parent="FirebaseUI">
-    <item name="windowNoTitle">false</item>
-    <item name="windowActionBar">true</item>
-    <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="colorPrimary">#FF8800</item>
         <item name="colorPrimaryDark">#FF8800</item>
         <item name="colorAccent">#FF8800</item>
         <item name="colorControlNormal">#5E4F47</item>
         <item name="colorControlActivated">#FF8800</item>
-        <item name="android:windowBackground">@drawable/backgrounprueba</item> <!-- o reemplaza por drawable-->
+        <item name="android:windowBackground">@drawable/backgrounprueba
+        </item> <!-- o reemplaza por drawable-->
     </style>
 
     <style name="etiqueta">

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.warmhome.BluetoothActivity"
+    android:background="@drawable/popup_bg">
+
+    <com.example.warmhome.view.RecyclerViewProgressEmptySupport
+        android:layout_marginTop="70dp"
+        android:id="@+id/list"
+        android:name="co.aurasphere.bluepair.DeviceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="co.aurasphere.bluepair.DeviceFragment"
+        tools:listitem="@layout/list_device_item"
+        />
+
+    <TextView
+        android:id="@+id/empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_list_message"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My BT Name"
+        android:id="@+id/textBT"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/whiteLanding"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/colorApp"
+        android:src="@drawable/ic_bluetooth_white_24dp"
+        app:borderWidth="0dp"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

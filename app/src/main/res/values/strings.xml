@@ -11,20 +11,17 @@
     <string name="acercaDe">Acerca de...</string>
     <string name="inicio">Inicio</string>
     <string name="preferencias">Preferencias</string>
+    <string name="sistema_musica">Sistema Música</string>
     <string name="perfil">Perfil</string>
     <string name="mapa">Mapa</string>
     <string name="textoAcercaDe">Este programa ha sido desarrollado como primera versión para el proyecto de IOT,en esta aplicaión se visualizara los datos de la temperatura, el timbre y del agua. Tambien vas a poder controlar la desde la aplicación la calefación las ventanas y la bañera de la casa.</string>
 
 
     <!-- Autentificacion Facebook y Twitter -->
-    <string name="facebook_application_id"
-        translatable="false">3136930153047139</string>
-    <string name="facebook_login_protocol_scheme"
-        translatable="false">fb3136930153047139</string>
-    <string name="twitter_consumer_key"
-        translatable="false">u9ckBGJfFGsO1N3tll2rrfZu8</string>
-    <string name="twitter_consumer_secret"
-        translatable= "false">bJnSHqtdPCbxDYOBSkQQBbkb3vSXeYwGKw2q9v3LE9DfewTCqI</string>
+    <string name="facebook_application_id" translatable="false">3136930153047139</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb3136930153047139</string>
+    <string name="twitter_consumer_key" translatable="false">u9ckBGJfFGsO1N3tll2rrfZu8</string>
+    <string name="twitter_consumer_secret" translatable="false">bJnSHqtdPCbxDYOBSkQQBbkb3vSXeYwGKw2q9v3LE9DfewTCqI</string>
 
     <!--Diseño Firebase Login-->
     <string name="fui_default_toolbar_title" translatable="false">Tipo de Autentificación</string>
@@ -39,4 +36,43 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_instrucciones">InstruccionesActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+    <!-- Bluetooth -->
+    <string name="device_discovery_started">Buscando dispositivos cercanos&#8230;</string>
+    <string name="device_already_paired">¡Este dispositivo ya está emparejado!</string>
+    <string name="device_pairing_success">¡Dispositivo emparejado con éxito!</string>
+    <string name="enabling_bluetooth">Encender Bluetooth y buscar dispositivos&#8230;</string>
+    <string name="device_discovery_stopped">Descubrimiento de dispositivo cancelado</string>
+    <string name="empty_list_message">No se encontraron dispositivos cercanos. Toque el botón inferior derecho para iniciar un nuevo descubrimiento de dispositivo.</string>
+    <string name="bluetooth_not_available_message">Parece que este dispositivo no tiene un controlador Bluetooth disponible. \ nEl sistema de reproducción de WarmHome solo funciona con Bluetooth, así que inténtalo de nuevo en un dispositivo diferente. \ nLa aplicación se cerrará ahora.</string>
+    <string name="bluetooth_not_available_title">Bluetooth no disponible</string>
+
+    <!-- Preferencias -->
+    <string name="pref_title_ringtone">Tono de llamada</string>
+    <string name="pref_ringtone_silent">Silencio</string>
+    <string name="pref_title_notifications">Notificaciones</string>
+    <string name="summary_choose_ringtone">Elige el sonido de notificacion</string>
+    <string name="pref_header_about">Acerca de</string>
+    <string name="summary_about">Este programa ha sido desarrollado como primera versión para el proyecto de IOT,en esta aplicaión se visualizara los datos de la temperatura, el timbre y del agua. Tambien vas a poder controlar la desde la aplicación la calefación las ventanas y la bañera de la casa.</string>
+    <string name="app_version">3.1</string>
+    <string name="title_faq">FAQ</string>
+    <string name="summary_faq">Mira las preguntas frecuentes</string>
+    <string name="url_faq">https://www.instagram.com/nachochambo/</string>
+    <string name="privacy_policy">Politica de privacidad</string>
+    <string name="url_privacy">https://www.instagram.com/nachochambo/</string>
+    <string name="title_terms">Términos &amp; Condiciones</string>
+    <string name="url_terms">https://www.instagram.com/nachochambo/</string>
+    <string name="title_version">Versión</string>
+    <string name="title_new_notification_sound">Notificación de mensaje nuevo</string>
+    <string name="title_vibrate">Vibrar</string>
+    <string name="summary_vibrate">Vibrar en nueva notificación</string>
+    <string name="key_upload_over_wifi">key_upload_over_wifi</string>
+    <string name="notifications_new_message">notifications_new_message</string>
+    <string name="key_notifications_new_message_ringtone">key_notifications_new_message_ringtone</string>
+    <string name="key_vibrate">key_vibrate</string>
+
 </resources>

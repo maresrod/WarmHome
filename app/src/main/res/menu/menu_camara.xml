@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.example.warmhome.CamaraPortal">
+
+    <item
+        android:id="@+id/preferencias"
+        android:orderInCategory="1"
+        android:icon="@drawable/settings"
+        android:title="@string/preferencias"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/llamar"
+        android:orderInCategory="1"
+        android:icon="@drawable/fui_ic_phone_white_24dp"
+        android:title="Llamar al tecnico"
+        app:showAsAction="ifRoom|withText"></item>
+
+    <item
+        android:id="@+id/graficas"
+        android:icon="@drawable/estadistica"
+        android:orderInCategory="1"
+        android:title="Gráficas"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/cerrar_sesion"
+        android:orderInCategory="1"
+        android:icon="@drawable/logout"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="always|collapseActionView"/>
+</menu>

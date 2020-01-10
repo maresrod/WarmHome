@@ -40,6 +40,7 @@ public class Presencia extends Activity implements MqttCallback {
     MqttClient client;
     String cambio = "ON";
     TextView textoPresencia;
+    ImageView imagenPresencia;
     int contador =0 ;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     Map<String, Object> datos = new HashMap<>();
@@ -50,6 +51,7 @@ public class Presencia extends Activity implements MqttCallback {
 
 
         textoPresencia = findViewById(R.id.textopresencia);
+        imagenPresencia = findViewById(R.id.imageView6);
 
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -114,6 +116,7 @@ public class Presencia extends Activity implements MqttCallback {
             @Override public void run() {
                 if (topic.equals("Grupo6xD/proyecto/presencia")) {
                     textoPresencia.setText(payload);
+                    imagenPresencia.setImageResource(R.drawable.tumbleweed);
 
                     if(payload.equals("hay alguien en la habitacion")){
                         try {

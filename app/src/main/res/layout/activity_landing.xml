@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,13 +11,15 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorAccent">
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/colorApp">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            />
+            android:background="@color/colorApp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -30,7 +33,6 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
 
-
     <com.getbase.floatingactionbutton.FloatingActionsMenu
         android:id="@+id/grupofab"
         android:layout_width="wrap_content"
@@ -38,7 +40,10 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:fab_labelStyle="@style/etiqueta"
+        app:fab_addButtonColorNormal="@color/colorApp"
         app:fab_addButtonColorPressed="@color/colorFondoMenu">
+
+
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab1"
@@ -76,11 +81,11 @@
             android:id="@+id/fab4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:fab_icon="@drawable/preference"
+            app:fab_icon="@drawable/speaker_warm"
             app:fab_size="mini"
             app:fab_colorNormal="@color/colorFondoMenu"
             app:fab_colorPressed="@color/colorApp"
-            app:fab_title="@string/preferencias"
+            app:fab_title="@string/sistema_musica"
             />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
@@ -93,9 +98,38 @@
             app:fab_colorPressed="@color/colorApp"
             app:fab_title="@string/mapa"
             />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/camera1"
+            app:fab_size="mini"
+            app:fab_colorNormal="@color/colorFondoMenu"
+            app:fab_colorPressed="@color/colorApp"
+            app:fab_title="Timbre"
+            />
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="278dp"
+        android:layout_height="match_parent">
 
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="55dp"
+            android:background="#FF8800"
+            app:headerLayout="@layout/header_menu"
+            app:itemIconTint="@color/whiteLanding"
+            app:itemTextColor="@color/whiteLanding"
+            app:menu="@menu/drawermenu">
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

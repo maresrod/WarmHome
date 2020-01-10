@@ -6,18 +6,31 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.warmhome.ParametrosCardview.Iluminacion;
 import com.example.warmhome.ParametrosCardview.Presencia;
 import com.example.warmhome.ParametrosCardview.Temperatura;
-import com.example.warmhome.ParametrosCardview.Ventana;
 import com.example.warmhome.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+
+import java.util.Objects;
 
 // TAB HABITACION
 public class Habitacion extends Fragment {
+    private TextView text;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +38,31 @@ public class Habitacion extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_habitacion, container, true);
+        View view = inflater.inflate(R.layout.fragment_habitacion, container, false);
+
+
+        text = view.findViewById(R.id.textTempH);
+        db.collection("Baño").document("datos").addSnapshotListener(
+                new EventListener<DocumentSnapshot>() {
+                    @Override
+                    public void onEvent(@Nullable DocumentSnapshot snapshot,
+                                        @Nullable FirebaseFirestoreException e) {
+                        if (e != null) {
+                            Log.e("Firebase", "Error al leer", e);
+                        } else if (snapshot == null || !snapshot.exists()) {
+                            Log.e("Firebase", "Error: documento no encontrado ");
+                        } else {
+                            String a = Objects.requireNonNull(snapshot.get("Temperatura")).toString();
+                            Log.e("AAAAAA", snapshot.getId());
+
+                            text.setText(""+a+"ºC");
+
+
+
+                        }
+                    }
+                }
+        );
 
         CardView tarjetaT = view.findViewById(R.id.TemperaturaH);
 
@@ -65,19 +102,6 @@ public class Habitacion extends Fragment {
             }
         });
 
-        //Tarjeta Ventana
-        CardView tarjetaV = view.findViewById(R.id.VentanasH);
-
-        tarjetaV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.e("EEEEEEEEEEE","CLICKASTE");
-                Intent i = new Intent(getContext(), Ventana.class);
-                startActivity(i);
-
-            }
-        });
-
-        return inflater.inflate(R.layout.fragment_habitacion, container, false);
+        return view;
     }
 }

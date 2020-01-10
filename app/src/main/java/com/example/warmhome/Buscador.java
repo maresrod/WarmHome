@@ -74,15 +74,7 @@ public class Buscador extends AppCompatActivity {
         fab4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PreferenciasActivity.class);
-                startActivity(i);
-                menuBotones.collapse();
-            }
-        });
-        fab5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(), PlanoCasa.class);
+                Intent i = new Intent(getApplicationContext(), BluetoothActivity.class);
                 startActivity(i);
                 menuBotones.collapse();
             }
